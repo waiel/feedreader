@@ -100,11 +100,12 @@ $(function () {
         // do asyncronas call before testing the feeds
         beforeEach(function (cb) {
             loadFeed(0, function () {
+                //call call back
                 cb();
             });
         });
 
-        it('Has a single entry within the feed container ', function () {
+        it('Has at least single entry within the feed container ', function () {
             //query all entries with the feed containers 
             let entries = document.querySelectorAll('.feed .entry');
             //check the count of entries to be grater than 0
@@ -130,6 +131,7 @@ $(function () {
                 //load second feed
                 loadFeed(1, function () {
                     feed2 = document.querySelector('.feed').innerHTML;
+                    //call call back
                     cb();
                 })
             });
