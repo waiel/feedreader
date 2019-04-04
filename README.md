@@ -2,12 +2,13 @@
 by *Waiel Eid*
 
 
-##How to run: 
+## How to run
+
 All you need to do is run the `index.html` in your default browser. 
 The tests defined in the `Jasmine/spec/feedreader.js` file will execute automatically and show the result of the test at the bottom of the page. 
 
 
-##Useful resources & Tools used 
+## Useful resources & Tools used
 
 * [Microsft visual studio code](https://code.visualstudio.com/)
 * [VS Code Jasmine snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets)
