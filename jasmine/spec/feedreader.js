@@ -31,17 +31,12 @@ $(function () {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('a URL', function () {
-
-            function testFeedURL(index) {
-                if ('is Defined for feed ' + index, function () {
-                        expect(allFeeds[index].url).toBeDefined();
-                        expect(allFeeds[index].url.length).toBeGraterThan(0);
-                    });
-            }
-
-            for (let i = 0; i < allFeeds.length; i++) {
-                testFeedURL(i);
+        it('All feed Urls are defined', function () {
+            for (let feed of allFeeds) {
+                //url is defined
+                expect(feed.url).toBeDefined();
+                // url is not empty
+                expect(feed.url.length).not.toBe(0);
             }
 
         });
